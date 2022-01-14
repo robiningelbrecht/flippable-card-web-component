@@ -18,9 +18,59 @@
   <body>
     <div class="inner">
         <flippable-card>
-            <div slot="front">FRONT</div>
-            <div slot="back">BACK<br />With<br />scroll</div>
+            <div slot="front">
+              <h1>Flippable card</h1>
+              <h2>flip-direction: horzontal</h2>
+              <pre>
+<code>
+  &lt;flippable-card&gt;
+    &lt;div slot="front"&gt;&lt;/div&gt;
+    &lt;div slot="back"&gt;&lt;/div&gt;
+  &lt;/flippable-card&gt;
+</code>
+              </pre>
+            </div>
+            <div slot="back">
+              <h1>This is the back</h1>
+              <p>It can contain more content and will create a scroll</p>
+              <br />
+              <img src="assets/placeholder-1.jpg" alt="Placeholder"/>
+            </div>
         </flippable-card>
+        <flippable-card flip-direction="vertical">
+          <div slot="front">
+            <h1>Flippable card</h1>
+            <h2>flip-direction: vertical</h2>
+            <pre>
+<code>
+  &lt;flippable-card flip-direction="vertical"&gt;
+    &lt;div slot="front"&gt;&lt;/div&gt;
+    &lt;div slot="back"&gt;&lt;/div&gt;
+  &lt;/flippable-card&gt;
+</code>
+            </pre>
+          </div>
+          <div slot="back">
+              <h1>Hello, I'm the back side of the card :)</h1>
+          </div>
+      </flippable-card>
+      <flippable-card flip-direction="vertical" flipped>
+        <div slot="front">
+          <h1>Flipped card</h1>
+          <h2>by default</h2>
+          <pre>
+<code>
+&lt;flippable-card flipped&gt;
+  &lt;div slot="front"&gt;&lt;/div&gt;
+  &lt;div slot="back"&gt;&lt;/div&gt;
+&lt;/flippable-card&gt;
+</code>
+          </pre>
+        </div>
+        <div slot="back">
+          <h1>Hello, I'm the back side of the card :)</h1>
+        </div>
+    </flippable-card>      
     </div>
 
     <script type="module" src="js/flippable-card.js"></script>

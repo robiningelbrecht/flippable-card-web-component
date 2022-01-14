@@ -14,18 +14,32 @@ body > div.inner {
   justify-content: center;
 }
 
+pre {
+  overflow-x: auto;
+  font-size: 0.8rem;
+}
+
 flippable-card {
   width: 400px;
+  margin: 0 1em;
+}
+
+flippable-card img {
+  border-radius: 0.3rem;
 }
 
 flippable-card [slot] {
   padding: 1em;
-}
-
-flippable-card [slot="front"] {
-  background-color: #ccc;
+  background: linear-gradient(#37363c, rgb(42 41 48));
+  border-radius: 0.3rem;
 }
 
 flippable-card [slot="back"] {
-  background-color: #555;
+  min-height: 100%;
+}
+
+flippable-card[flip-direction="vertical"] [slot="back"] {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
