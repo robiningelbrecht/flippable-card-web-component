@@ -7,11 +7,16 @@ body {
 }
 
 body > div.inner {
-  display: flex;
-  align-items: center;
   min-height: 100vh;
   color: rgb(255 254 255);
-  justify-content: center;
+}
+
+@media (min-width: 440px) { 
+  body > div.inner {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+  }
 }
 
 pre {
@@ -20,9 +25,16 @@ pre {
 }
 
 flippable-card {
-  width: 400px;
+  width: calc(100% - 2em);
   margin: 0 1em;
 }
+
+@media (min-width: 440px) { 
+  flippable-card {
+    width: 400px;
+  }
+}
+
 
 flippable-card img {
   border-radius: 0.3rem;
