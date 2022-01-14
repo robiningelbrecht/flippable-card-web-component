@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(24 23 31);
+  font-family: Poppins, sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 1rem;
+}
+
+body > div.inner {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  color: rgb(255 254 255);
+  justify-content: center;
+}
+
+flippable-card {
+  width: 400px;
+}
+
+flippable-card [slot] {
+  padding: 1em;
+}
+
+flippable-card [slot="front"] {
+  background-color: #ccc;
+}
+
+flippable-card [slot="back"] {
+  background-color: #555;
+}
