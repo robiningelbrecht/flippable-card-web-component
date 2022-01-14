@@ -1,6 +1,6 @@
 # Flippable card web component
 
-![Preview](https://github.com/robiningelbrecht/flippable-card-web-component/raw/master/assets/preview.gif "Preview")
+![Preview](https://github.com/robiningelbrecht/flippable-card-web-component/raw/main/assets/preview.gif "Preview")
 
 Demo: [https://robiningelbrecht.github.io/projects/flippable-card-web-component/](https://robiningelbrecht.github.io/projects/flippable-card-web-component/)
 
