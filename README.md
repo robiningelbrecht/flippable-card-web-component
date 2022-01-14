@@ -12,7 +12,7 @@ Demo: [https://robiningelbrecht.github.io/projects/flippable-card-web-component/
 <script type="module" src="js/flippable-card.js"></script>
 ```
 
-*Start creating flippable cards:
+* Start creating flippable cards:
 
 ```html
 <flippable-card>
