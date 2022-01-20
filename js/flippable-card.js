@@ -69,7 +69,7 @@ export class FlippableCard extends HTMLElement {
     if (!this.hasAttribute("flip-direction")) {
       this.flipDirection = "horizontal";
     }
-    if(!this._isValidFlipDirection()){
+    if (!this._isValidFlipDirection()) {
       this.flipDirection = "horizontal";
     }
 
@@ -81,6 +81,9 @@ export class FlippableCard extends HTMLElement {
   }
 
   _onClick(event) {
+    if (this.disabled) {
+      return;
+    }
     this._togglePressed();
   }
 
@@ -90,6 +93,10 @@ export class FlippableCard extends HTMLElement {
 
   get flipDirection() {
     return this.getAttribute("flip-direction");
+  }
+
+  get disabled() {
+    return this.hasAttribute("disabled");
   }
 
   set flipped(value) {
