@@ -27,3 +27,10 @@ Demo: [https://robiningelbrecht.github.io/projects/flippable-card-web-component/
     <div slot="back"></div>
 </flippable-card>
 ```
+
+```html
+<flippable-card disabled>
+    <div slot="front"></div>
+    <div slot="back"></div>
+</flippable-card>
+```
