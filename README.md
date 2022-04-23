@@ -2,7 +2,7 @@
 
 ![Preview](https://github.com/robiningelbrecht/flippable-card-web-component/raw/main/assets/preview.gif "Preview")
 
-Demo: [https://robiningelbrecht.github.io/projects/flippable-card-web-component/](https://robiningelbrecht.github.io/projects/flippable-card-web-component/)
+Demo: [http://flippable-card-web-component.robiningelbrecht.be/](http://flippable-card-web-component.robiningelbrecht.be/)
 
 ## Usage
 
